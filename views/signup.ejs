@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <section>
+            <div class="container vh-100 d-flex justify-content-center align-items-center">
+                <form action="/signup" method="POST" class="form d-flex flex-column">
+                    <h1 class="mb-2">Sign Up</h1>
+                    <% if (error.length) { %>
+                        <div class="alert alert-danger">
+                            <%= error %> 
+                        </div>
+                    <% } %>
+                    <label class="mt-1"> 
+                        <input class="form-control mt-3 border border-primary" type="text" placeholder="Username" minlength="3" maxlength="32" name="username" autocomplete="off" required>
+                    </label>
+                    <label class="mt-2">
+                        <input class="form-control  border border-primary" type="password" placeholder="Password" minlength="8" name="password" autocomplete="off" required>
+                    </label>
+                    <button class="btn btn-primary mt-2">Sign up</button>
+                    <a href="/login" class="btn btn-danger mt-2">Login</a>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

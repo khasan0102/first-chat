@@ -1,0 +1,155 @@
+.chat {
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.39);
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.781);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.users-box {
+    width: 30%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+.users-box > .users-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 15px;
+    background-color: #51c2d5;
+    border-bottom: 0.2px solid #a3ddcb;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.user-item > img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-item:hover {
+    background-color: #64dfdf;
+    transition: background-color 0.2s ease;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(52, 63, 47);
+    color: white;
+    padding: 5px 0;
+    padding-left: 15px;
+}
+
+.user-box > img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.user-box > span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+.message-box {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.messages-box {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    background-color: rgb(255, 247, 226);
+    position: relative;
+}
+.message {
+    color: white;
+    background-color: #67ab01;
+    display: inline-block;
+    max-width: 45%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.my-message {
+    margin-left: auto;
+    display: inline-block;
+    max-width: 45%;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #036666;
+}
+.send-form {
+    display: flex;
+    height: 5.5vh;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: yellow;
+}
+
+.send-form > input {
+    width: 100%;
+    display: inline-block;
+    height: 5.5vh;
+    outline: none;
+    border: none;
+    background-color: #dde2e7;
+    color: black;
+    padding: 0 10px;
+}
+
+.sendBtn {
+    border: none;
+    outline: none;
+    background: none;
+    display: inline-block;
+    background-color: #143838;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn2 {
+    margin-left: auto;
+    margin-right: 7%;
+}
+
+
+.start-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.356);
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    padding: 5px 10px;
+}
